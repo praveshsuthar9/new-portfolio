@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #060115 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #060115;
+}
+.navbar-brand {
+  color: orange !important;
+  font-size: 35px !important;
+}
+
+a.nav-link {
+  color: #fff;
+  font-size: 20px !important;
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+}
+
+a.nav-link:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.d-flex {
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h3 {
+  font-size: 40px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-container {
+  padding: 60px 0;
+}
+
+.home-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: all 0.3s linear;
+}
+
+.home-container h1 {
+  padding-top: 0px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.home-container h2 {
+  font-size: 35px;
+}
+
+.tech-s {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.tech-s p {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.tech-icon {
+  margin-left: 30px;
+}
+
+span i {
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+span i:hover {
+  transform: scale(1.5);
+}
+
+.html {
+  color: orangered;
+}
+
+.css {
+  color: #3434db;
+}
+
+.js {
+  color: yellow;
+}
+
+.bootstrap {
+  color: purple;
+}
+
+.react {
+  color: aqua;
+}
+
+/* Project-section-start */
+
+.project {
+  margin-top: 50px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.project:hover .project-content p {
+  bottom: -16px;
+}
+
+.project:hover .project-img img {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.project-img {
+  width: 100%;
+  height: 450px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 450px;
+  transition: all 0.3s linear;
+}
+
+.project-content p {
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  text-align: center;
+  color: orange;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #343434;
+  padding: 10px;
+  transition: all 0.3s linear; /* background: linear-gradient(to bottom, transparent, #222); */
+}
+
+/* About-Section-Start */
+
+.about-img img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.about-content {
+  padding-top: 100px;
+}
+
+.about-content h4 {
+  font-size: 35px;
+  font-weight: bold;
+  color: orange;
+}
+
+.about-content p {
+  padding-top: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.about-content p span {
+  color: orange;
+}
+
+.about-btn button {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  background-color: orange;
+  padding: 8px 30px;
+  border-radius: 9px;
+  margin-top: 15px;
+  transition: all 0.3s linear;
+}
+
+.about-btn button:hover {
+  background-color: rgb(219, 171, 84);
+  color: #222;
+}
+
+/* Js-Project-Start */
+
+.js-project {
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s linear;
+  border-radius: 9px;
+}
+
+.js-img img {
+  width: 100%;
+  height: 450px;
+}
+
+.js-project:hover .js-content {
+  display: block;
+  bottom: -15px;
+}
+
+.js-content {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background-color: #343434;
+  display: none;
+  transition: all 0.3s linear;
+}
+
+/* Footer-start */
+
+.footer-container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.contact h6 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contact p:hover {
+  color: orange;
+}
+
+.social-media h6 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.social-media a i {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.social-media a i:hover {
+  color: orange;
+}
+
+@media screen and (max-width: 1025px) {
+  .tech-s p {
+    font-size: 25px;
+  }
+
+  .tech-icon {
+    margin-left: 50px;
+  }
+  .project-img img {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* About-section-start */
+
+  .about-content {
+    padding-top: 10px;
+  }
+
+  .about-content h4 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 22px;
+    padding-top: 2px;
+  }
+
+  .about-btn button {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  section {
+    padding: 50px 0;
+  }
+  .home-container h1 {
+    font-size: 45px;
+  }
+  .tech-s {
+    display: none;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* about-section-start */
+  .about-content {
+    padding-top: 0px;
+  }
+
+  .about-content h4 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    padding-top: 0;
+  }
+
+  .about-btn button {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  section {
+    padding: 30px 5px;
+  }
+
+  .home-container {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .home-container h1 {
+    padding-top: 30px;
+  }
+
+  .project-img img {
+    height: 500px;
+  }
+
+  .footer-container {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-container h1 {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+
+  .home-container h2 {
+    font-size: 30px;
+  }
+
+  .project-img img {
+    height: 450px;
+  }
+
+  /* about-section-start */
+  .about-content {
+    padding-top: 30px;
+  }
+
+  .about-content h4 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .about-content p {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .about-btn button {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .footer-container {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+  }
+}
